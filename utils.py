@@ -2,7 +2,7 @@ import re
 import subprocess
 
 def ints(st):
-    return [int(i) for i in re.findall('\d+', st)]
+    return [int(i) for i in re.findall('-?\d+', st)]
 
 def ans(obj):
     cmd='echo '+str(obj).strip()+'|clip'
